@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Générateur de Code HTML Intelligent</title>
+    <title>Vrai Générateur IA HTML</title>
     <link rel="stylesheet" href="style.css">
     <!-- Librairie Supabase -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -11,32 +11,27 @@
 <body>
     <div class="container">
         <header>
-            <h1>⚡ Smart HTML Generator</h1>
-            <p>Dis-moi ce que tu veux, je génère ton code et je le sauvegarde sur Supabase.</p>
+            <h1>🧠 Vrai Générateur IA HTML</h1>
+            <p>Demande n'importe quoi à l'IA, elle code ton bloc sur mesure et le sauvegarde sur Supabase.</p>
         </header>
 
         <main class="grid">
-            <!-- Zone de prompt -->
+            <!-- Zone de prompt IA -->
             <section class="card">
-                <h2>1. Dis-moi quoi faire</h2>
+                <h2>1. Dis à l'IA ce que tu veux</h2>
                 <div class="form-group">
-                    <label for="promptInput">Décris ton bloc HTML :</label>
-                    <textarea id="promptInput" placeholder="Ex: Un titre centré, avec un fond noir, un paragraphe et un bouton rouge..."></textarea>
-                    <span class="hint">Astuce : Tape des mots comme "fond noir", "fond rouge", "centré", "bouton", etc.</span>
+                    <label for="promptInput">Décris ton design en détail :</label>
+                    <textarea id="promptInput" placeholder="Ex: Une carte de profil stylée avec un fond sombre, un avatar rond, mon nom en grand, une bio et un bouton violet 'Suivre'..."></textarea>
                 </div>
 
-                <button id="generateBtn">Générer le code</button>
+                <button id="generateBtn">🤖 Générer avec l'IA</button>
             </section>
 
             <!-- Résultat et Code -->
             <section class="card">
-                <h2>2. Code HTML Généré</h2>
+                <h2>2. Code HTML Généré par l'IA</h2>
                 <div class="code-output">
-                    <pre><code id="codeDisplay">&lt;div style="padding: 30px; font-family: sans-serif; background: #f9f9f9; color: #333; border-radius: 12px;"&gt;
-    &lt;div style="text-align: left;"&gt;
-        &lt;h1 style="font-size: 2rem; margin-bottom: 15px;"&gt;Page Web&lt;/h1&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+                    <pre><code id="codeDisplay">&lt;!-- Le code apparaîtra ici après votre demande --&gt;</code></pre>
                 </div>
                 <button id="copyBtn" class="secondary-btn">Copier le code</button>
                 <button id="saveBtn" class="save-btn" style="margin-top: 10px;">💾 Sauvegarder dans Supabase</button>
