@@ -1,6 +1,6 @@
 // --- CONFIGURATION SUPABASE ---
-const SUPABASE_URL = 'VOTRE_URL_SUPABASE';
-const SUPABASE_ANON_KEY = 'VOTRE_CLE_ANON_SUPABASE';
+const SUPABASE_URL = 'https://mtwwjhgjgurzvjzscttw.supabase.co/rest/v1/';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im10d3dqaGdqZ3VyenZqenNjdHR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2OTg0MzAsImV4cCI6MjEwNDI3NDQzMH0.bXNZq9YnhL9Ge4wmFqvTLeOGS3XDp9rPljaWanQLil0';
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // -----------------------------
 
