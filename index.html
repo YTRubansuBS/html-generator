@@ -3,35 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Générateur de Code HTML avec Supabase</title>
+    <title>Générateur de Code HTML Intelligent</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Intégration de la librairie Supabase -->
+    <!-- Librairie Supabase -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>⚡ Générateur de Code HTML</h1>
-            <p>Personnalise, copie et sauvegarde ton code directement dans Supabase.</p>
+            <h1>⚡ Smart HTML Generator</h1>
+            <p>Dis-moi ce que tu veux, je génère ton code et je le sauvegarde sur Supabase.</p>
         </header>
 
         <main class="grid">
-            <!-- Formulaire de configuration -->
+            <!-- Zone de prompt -->
             <section class="card">
-                <h2>1. Paramètres</h2>
+                <h2>1. Dis-moi quoi faire</h2>
                 <div class="form-group">
-                    <label for="titleText">Titre (H1) :</label>
-                    <input type="text" id="titleText" value="Mon Super Site" placeholder="Entre ton titre...">
-                </div>
-
-                <div class="form-group">
-                    <label for="parText">Paragraphe :</label>
-                    <textarea id="parText" placeholder="Entre ton texte...">Bienvenue sur ma page web générée automatiquement.</textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="bgColor">Couleur de fond :</label>
-                    <input type="color" id="bgColor" value="#ffffff">
+                    <label for="promptInput">Décris ton bloc HTML :</label>
+                    <textarea id="promptInput" placeholder="Ex: Un titre centré, avec un fond noir, un paragraphe et un bouton rouge..."></textarea>
+                    <span class="hint">Astuce : Tape des mots comme "fond noir", "fond rouge", "centré", "bouton", etc.</span>
                 </div>
 
                 <button id="generateBtn">Générer le code</button>
@@ -41,9 +32,10 @@
             <section class="card">
                 <h2>2. Code HTML Généré</h2>
                 <div class="code-output">
-                    <pre><code id="codeDisplay">&lt;div style="background-color: #ffffff; padding: 20px; border-radius: 8px;"&gt;
-    &lt;h1&gt;Mon Super Site&lt;/h1&gt;
-    &lt;p&gt;Bienvenue sur ma page web générée automatiquement.&lt;/p&gt;
+                    <pre><code id="codeDisplay">&lt;div style="padding: 30px; font-family: sans-serif; background: #f9f9f9; color: #333; border-radius: 12px;"&gt;
+    &lt;div style="text-align: left;"&gt;
+        &lt;h1 style="font-size: 2rem; margin-bottom: 15px;"&gt;Page Web&lt;/h1&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
                 <button id="copyBtn" class="secondary-btn">Copier le code</button>
