@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #0f172a;
+    color: #f8fafc;
     padding: 20px;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -22,12 +22,12 @@ header {
 }
 
 header h1 {
-    color: #2c3e50;
+    color: #38bdf8;
     margin-bottom: 10px;
 }
 
 header p {
-    color: #7f8c8d;
+    color: #94a3b8;
 }
 
 .grid {
@@ -43,16 +43,17 @@ header p {
 }
 
 .card {
-    background: #ffffff;
+    background: #1e293b;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334155;
 }
 
 .card h2 {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #34495e;
+    color: #f1f5f9;
 }
 
 .form-group {
@@ -64,35 +65,33 @@ label {
     margin-bottom: 5px;
     font-weight: 600;
     font-size: 0.9rem;
-}
-
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 0.95rem;
+    color: #cbd5e1;
 }
 
 textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 0.95rem;
     resize: vertical;
-    height: 80px;
+    height: 120px;
 }
 
-input[type="color"] {
-    width: 100%;
-    height: 40px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    cursor: pointer;
-    background: none;
+.hint {
+    display: block;
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 5px;
 }
 
 button {
     width: 100%;
     padding: 12px;
-    background-color: #3498db;
-    color: white;
+    background-color: #38bdf8;
+    color: #0f172a;
     border: none;
     border-radius: 6px;
     font-size: 1rem;
@@ -102,33 +101,36 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #0ea5e9;
 }
 
 .code-output {
-    background-color: #1e1e1e;
-    color: #dcdcdc;
+    background-color: #090d16;
+    color: #38bdf8;
     padding: 15px;
     border-radius: 6px;
     overflow-x: auto;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     height: 180px;
     margin-bottom: 15px;
+    border: 1px solid #334155;
 }
 
 .secondary-btn {
-    background-color: #2ecc71;
+    background-color: #10b981;
+    color: white;
 }
 
 .secondary-btn:hover {
-    background-color: #27ae60;
+    background-color: #059669;
 }
 
 .save-btn {
-    background-color: #e67e22;
+    background-color: #f59e0b;
+    color: #0f172a;
 }
 
 .save-btn:hover {
-    background-color: #d35400;
+    background-color: #d97706;
 }
